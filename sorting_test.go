@@ -5,11 +5,11 @@ import (
 	"reflect"
 	"testing"
 
+	"github.com/dwarvesf/qor/test/utils"
+	"github.com/dwarvesf/sorting"
 	"github.com/jinzhu/gorm"
 	"github.com/qor/l10n"
 	"github.com/qor/publish"
-	"github.com/qor/qor/test/utils"
-	"github.com/qor/sorting"
 )
 
 type User struct {

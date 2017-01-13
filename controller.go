@@ -7,9 +7,9 @@ import (
 	"path"
 	"strconv"
 
-	"github.com/qor/admin"
-	"github.com/qor/qor"
-	"github.com/qor/qor/resource"
+	"github.com/dwarvesf/admin"
+	"github.com/dwarvesf/qor"
+	"github.com/dwarvesf/qor/resource"
 	"github.com/qor/roles"
 )
 

@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/dwarvesf/sorting"
 	"github.com/jinzhu/gorm"
 	"github.com/qor/l10n"
-	"github.com/qor/sorting"
 )
 
 type Brand struct {

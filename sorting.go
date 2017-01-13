@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"reflect"
 
+	"github.com/dwarvesf/admin"
 	"github.com/jinzhu/gorm"
-	"github.com/qor/admin"
 	"github.com/qor/publish"
 )
 
@@ -45,7 +45,7 @@ type SortingDESC struct {
 func (SortingDESC) SortingDesc() {}
 
 func init() {
-	admin.RegisterViewPath("github.com/qor/sorting/views")
+	admin.RegisterViewPath("github.com/dwarvesf/sorting/views")
 }
 
 func newModel(value interface{}) interface{} {
