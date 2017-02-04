@@ -10,11 +10,11 @@
     {{$meta := .Meta}}
     {{if .Value}}
       {{range $index, $value := .Value }}
-        <fieldset class="qor-fieldset qor-sortable__item">
+        <fieldset class="qor-fieldset qor-sortable__item qor-sortable__item__{{slug_meta_label $meta}}">
 
           <div class="qor-sortable__change">
             <div class="qor-sortable__action" style="display: none;">
-              <button class="mdl-button mdl-button--colored mdl-button--raised mdl-js-button qor-sortable__button-move" type="button" data-item-index="{{$index}}">
+              <button class="mdl-button mdl-button--colored mdl-button--raised mdl-js-button qor-sortable__button-move" attr-data="{{slug_meta_label $meta}}" type="button" data-item-index="{{$index}}">
                 {{t "qor_admin.form.button.move" "Move"}}
               </button>
             </div>
@@ -31,10 +31,10 @@
     {{end}}
 
     {{if has_create_permission .Meta}}
-      <fieldset class="qor-fieldset qor-sortable__item qor-fieldset--new" style="display: none">
+      <fieldset class="qor-fieldset qor-sortable__item qor-fieldset--new qor-sortable__item__{{slug_meta_label $meta}}" style="display: none">
         <div class="qor-sortable__change">
           <div class="qor-sortable__action" style="display: none;">
-            <button class="mdl-button mdl-button--colored mdl-button--raised mdl-js-button qor-sortable__button-move" type="button">
+            <button class="mdl-button mdl-button--colored mdl-button--raised mdl-js-button qor-sortable__button-move" attr-data="{{slug_meta_label $meta}}"  type="button">
               {{t "qor_admin.form.button.move" "Move"}}
             </button>
           </div>
