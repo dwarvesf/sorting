@@ -129,7 +129,6 @@
       if (targetPosition == currentPosition) {
         return;
       }
-
       if (targetPosition == 1) {
         insertPosition = 1;
       } else if (targetPosition < currentPosition) {
@@ -137,8 +136,7 @@
       } else {
         insertPosition = targetPosition;
       }
-
-      $target = $(CLASS_ITEM).filter(function(){
+      $target = $(CLASS_ITEM+"__"+$ele.attr("attr-data")).filter(function(){
         return $(this).data().itemIndex == insertPosition;
       });
 
@@ -148,7 +146,7 @@
         $target.after($current.fadeOut('slow').fadeIn('slow'));
       }
 
-      this.initItemOrder(true);
+      this.initItemOrder(true,$ele);
 
     },
 
