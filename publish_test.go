@@ -5,9 +5,9 @@ import (
 	"reflect"
 	"testing"
 
+	"github.com/dwarvesf/publish"
 	"github.com/dwarvesf/sorting"
 	"github.com/jinzhu/gorm"
-	"github.com/qor/publish"
 )
 
 type Product struct {
