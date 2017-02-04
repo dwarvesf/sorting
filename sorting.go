@@ -6,8 +6,8 @@ import (
 	"reflect"
 
 	"github.com/dwarvesf/admin"
+	"github.com/dwarvesf/publish"
 	"github.com/jinzhu/gorm"
-	"github.com/qor/publish"
 )
 
 type sortingInterface interface {
