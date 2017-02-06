@@ -107,7 +107,7 @@
 
           $resource.size() && $resource.each(function () {
             resourceName = $(this).prop('name');
-            newResourceName = '[' + orderData.itemIndex + ']';
+            newResourceName = '[' + index + ']';
             resourceName = resourceName.replace(/\[\d+\]/,newResourceName);
             $(this).prop('name',resourceName);
           });
