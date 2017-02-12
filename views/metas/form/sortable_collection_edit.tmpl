@@ -47,7 +47,11 @@
       </fieldset>
 
       <button class="mdl-button mdl-button--primary mdl-js-button qor-fieldset__add qor-sortable__button-add" type="button">
+        {{if eq (meta_label .Meta) "More Details"}}
+        {{t (printf "%v.attributes.add_%v" .BaseResource.ToParam (plural (meta_label .Meta))) (printf "Add %v" (plural (meta_label .Meta)))}}
+        {{else}}
         {{t (printf "%v.attributes.add_%v" .BaseResource.ToParam (singular (meta_label .Meta))) (printf "Add %v" (singular (meta_label .Meta)))}}
+        {{end}}
       </button>
     {{end}}
   </div>
